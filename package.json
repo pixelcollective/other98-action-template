@@ -1,15 +1,6 @@
 {
-  "name": "gatsby-starter-identity",
-  "version": "0.0.1",
-  "description": "Gatsby.js V2 starter template based on Identity by HTML5 UP",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/anubhavsrivastava/gatsby-starter-identity.git"
-  },
-  "author": {
-    "name": "Anubhav Srivastava",
-    "email": "anubhav.srivastava00@gmail.com"
-  },
+  "name": "other98-action-template",
+  "version": "1.0.0",
   "dependencies": {
     "@emotion/core": "^10.0.27",
     "@emotion/styled": "^10.0.27",
@@ -47,10 +38,5 @@
     "gatsby",
     "gatsby-starter",
     "gatsby-starter-identity"
-  ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/anubhavsrivastava/gatsby-starter-identity/issues"
-  },
-  "homepage": "https://github.com/anubhavsrivastava/gatsby-starter-identity#readme"
+  ]
 }
