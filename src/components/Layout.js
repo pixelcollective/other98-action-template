@@ -1,27 +1,25 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import Helmet from 'react-helmet';
-import { StaticQuery, graphql } from 'gatsby';
-
-import '../assets/sass/main.scss';
-
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import Helmet from 'react-helmet'
+import { StaticQuery, graphql } from 'gatsby'
+import config from './../../config'
 class Layout extends Component {
   constructor() {
-    super();
+    super()
     this.state = {
       isPreloaded: true,
-    };
+    }
   }
 
   componentDidMount() {
     setTimeout(() => {
-      this.setState({ isPreloaded: false });
-    }, 1000);
+      this.setState({ isPreloaded: false })
+    }, 1000)
   }
 
   render() {
-    const { children } = this.props;
-    const { isPreloaded } = this.state;
+    const { children } = this.props
+
     return (
       <StaticQuery
         query={graphql`
@@ -40,13 +38,12 @@ class Layout extends Component {
               meta={[
                 { name: 'description', content: 'Eventually' },
                 { name: 'keywords', content: 'site, web' },
-              ]}
-            >
+              ]}>
               <html lang="en" />
+              <script src={`https://actionnetwork.org/widgets/v3/petition/${config.action}?format=js&source=widget`}></script>
             </Helmet>
-            <div className={isPreloaded ? 'main-body is-preload' : 'main-body'}>
-              <div id="wrapper">{children}</div>
-            </div>
+
+            {children}
           </>
         )}
       />
@@ -56,6 +53,6 @@ class Layout extends Component {
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-};
+}
 
-export default Layout;
+export default Layout
