@@ -3,26 +3,20 @@ module.exports = {
   callToAction: 'Sign this petition',
   action: 'demand-medicare-for-all',
   actionTarget: `All members of congress`,
-  content: `
-    <p>44 million people in the US are uninsured. 38 million more are under insured. 45,000 people die each year due to lack of health insurance. We are facing a crisis in our country.</p>
-    <p>For-profit, private health insurance corporations are price gouging us and denying us care to the point of debt, bankruptcy, and death. We all deserve better as our human right.</p>
-    <p>We demand a Medicare for All single payer system. Medicare for All expands Medicare to cover everyone and guarantees comprehensive health care--including vision, dental, hearing, and long-term care.</p>
-    <p>We demand a Medicare for All single payer system to finally guarantee health care as a human right - not a privilege. The Medicare for All Act of 2019 in the House and Senate must become law.</p>
+  actionCopy: `
+    We demand a Medicare for All single payer system to finally guarantee health care as a
+    human right - not a privilege. The House and Senate must pass the Medicare for All Act of 2019.
   `,
-  actionCopy: `We demand a Medicare for All single payer system to finally guarantee health care as a human right - not a privilege. The House and Senate must pass the Medicare for All Act of 2019.`,
-  copyright: 'Medicare for All',
-  logos: [
-    {
-      icon: 'o98',
-      name: 'Other98',
-      url: 'https://other98.com',
-    },
-    {
-      icon: '',
-      name: 'Twitter',
-      url: 'https://twitter.com/onlyanubhav',
-    },
-  ],
+  content: `
+    <p>44 million people in the US are uninsured. 38 million more are under insured. 45,000 people die each year due to lack of health insurance. We
+    are facing a crisis in our country.</p>
+    <p>For-profit, private health insurance corporations are price gouging us and denying us care to the point of debt, bankruptcy, and death. We
+    all deserve better as our human right.</p>
+    <p>We demand a Medicare for All single payer system. Medicare for All expands Medicare to cover everyone and guarantees comprehensive health
+    care--including vision, dental, hearing, and long-term care.</p>
+    <p>We demand a Medicare for All single payer system to finally guarantee health care as a human right - not a privilege. The Medicare for All
+    Act of 2019 in the House and Senate must become law.</p>
+  `,
   theme: {
     breakpoints: [`40em`, `52em`, `64em`],
     fontSizes: [12, 14, 16, 20, 24, 32, 48, 64],

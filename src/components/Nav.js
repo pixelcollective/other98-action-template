@@ -1,6 +1,8 @@
 import React from 'react'
-import { Text, Flex, Box, Link } from 'rebass'
+import { Text, Flex, Box, Image } from 'rebass'
 import config from './../../config'
+
+import Logos from './../assets/images/logos.png'
 
 export default () => (
   <Flex fontFamily={`body`} px={4} py={4} color="white" bg={config.theme.colors.blue} alignItems="center">

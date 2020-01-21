@@ -11,11 +11,13 @@ export default () => (
     paddingRight={config.theme.space[4]}
     marginLeft={`auto`}
     marginRight={`auto`}>
-    <Box>
-      <Text fontFamily={`body`}>
-        &copy; {config.copyright}
-      </Text>
-    </Box>
+    {config.copyright &&
+      <Box>
+        <Text fontFamily={`body`}>
+          {config.copyright}
+        </Text>
+      </Box>
+    }
   </Flex>
 )
 

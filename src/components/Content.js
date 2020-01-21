@@ -1,7 +1,7 @@
-import React from 'react';
-import { Box, Text, Heading, Image } from 'rebass';
+import React from 'react'
+import { Box, Text, Heading } from 'rebass'
 
-import config from '../../config';
+import config from '../../config'
 
 export default function Footer() {
   return (
@@ -9,8 +9,7 @@ export default function Footer() {
       marginTop={[2]}
       marginLeft={[0]}
       marginRight={[0, 4]}
-      marginBottom={[0, 2]}
-    >
+      marginBottom={[0, 2]}>
       <Heading fontSize={[3, 4, 5]} fontFamily={`heading`}>
         {config.title}
       </Heading>
@@ -24,8 +23,7 @@ export default function Footer() {
         fontWeight={[300]}
         dangerouslySetInnerHTML={{ __html: config.content }}
         fontFamily={`body`}
-        fontSize={[2]}
-      />
+        fontSize={[2]} />
     </Box>
-  );
+  )
 }

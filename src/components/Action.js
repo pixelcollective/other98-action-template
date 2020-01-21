@@ -1,5 +1,7 @@
 import React from 'react'
-import { Heading, Box, Text } from 'rebass'
+import { Heading, Box, Text, Image } from 'rebass'
+
+import Logos from './../assets/images/logos.png'
 import config from '../../config'
 
 export default function Footer() {
@@ -12,8 +14,7 @@ export default function Footer() {
         marginBottom={[2]}
         marginTop={[3]}
         fontWeight={300}
-        paddingBottom={[2]}
-      >
+        paddingBottom={[2]}>
         {config.callToAction}
       </Heading>
 
@@ -108,6 +109,18 @@ export default function Footer() {
           }}
         />
       </Text>
+
+      <Heading
+        fontFamily={`heading`}
+        textAlign={`center`}
+        style={{ textTransform: `uppercase` }}
+        fontSize={[1, 2]}
+        marginTop={[4]}
+        fontWeight={700}
+        paddingBottom={[2]}>
+        Sponsored by
+      </Heading>
+      <Image src={Logos} />
     </Box>
   );
 }
