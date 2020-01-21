@@ -1,11 +1,15 @@
 module.exports = {
-  title: 'Medicare is for everyone',
-  callToAction: 'Take action',
-  action: 'add-your-name-no-more-endless-wars',
+  title: 'Demand Medicare for All!',
+  callToAction: 'Sign this petition',
+  action: 'demand-medicare-for-all',
+  actionTarget: `All members of congress`,
   content: `
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+    <p>44 million people in the US are uninsured. 38 million more are under insured. 45,000 people die each year due to lack of health insurance. We are facing a crisis in our country.</p>
+    <p>For-profit, private health insurance corporations are price gouging us and denying us care to the point of debt, bankruptcy, and death. We all deserve better as our human right.</p>
+    <p>We demand a Medicare for All single payer system. Medicare for All expands Medicare to cover everyone and guarantees comprehensive health care--including vision, dental, hearing, and long-term care.</p>
+    <p>We demand a Medicare for All single payer system to finally guarantee health care as a human right - not a privilege. The Medicare for All Act of 2019 in the House and Senate must become law.</p>
   `,
+  actionCopy: `We demand a Medicare for All single payer system to finally guarantee health care as a human right - not a privilege. The House and Senate must pass the Medicare for All Act of 2019.`,
   copyright: 'Medicare for All',
   logos: [
     {
@@ -23,7 +27,9 @@ module.exports = {
     breakpoints: [`40em`, `52em`, `64em`],
     fontSizes: [12, 14, 16, 20, 24, 32, 48, 64],
     colors: {
-      blue: `#07c`,
+      lightBlue: `#2181ff`,
+      blue: `#1f80ff`,
+      darkBlue: `#0c53b1`,
       lightgray: `#f6f6ff`,
     },
     space: [0, 4, 8, 16, 32, 64, 128, 256],

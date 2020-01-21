@@ -5,7 +5,15 @@ import config from '../../config'
 export default function Footer() {
   return (
     <Box maxWidth={`100%`} marginBottom={[4]}>
-      <Heading fontFamily={`heading`} style={{textTransform: `uppercase`}} fontSize={[2, 3]} marginBottom={[2]} marginTop={[3]} fontWeight={300} paddingBottom={[2]}>
+      <Heading
+        fontFamily={`heading`}
+        style={{ textTransform: `uppercase` }}
+        fontSize={[2, 3]}
+        marginBottom={[2]}
+        marginTop={[3]}
+        fontWeight={300}
+        paddingBottom={[2]}
+      >
         {config.callToAction}
       </Heading>
 
@@ -70,7 +78,7 @@ export default function Footer() {
                 display: `none`,
               },
               [`input[type="submit"]`]: {
-                backgroundColor: `rgba(0, 152, 0, 1)`,
+                backgroundColor: config.theme.colors.blue,
                 color: `white`,
                 paddingTop: `0.5em`,
                 paddingBottom: `0.5em`,
@@ -84,7 +92,7 @@ export default function Footer() {
                 transition: `all 0.2s ease-in-out`,
                 [`&:hover`]: {
                   transition: `all 0.2s ease-in-out`,
-                  backgroundColor: `rgba(12, 68, 12, 1)`,
+                  backgroundColor: config.theme.colors.darkBlue,
                   color: `white`,
                 },
               },
